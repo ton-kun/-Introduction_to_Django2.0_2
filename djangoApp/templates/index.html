@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang='ja'>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initail-scale=1">
+    <title>フィーダー: トップページ</title>
+    <link rel ="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+  </head>
+  <body>
+    <!---nav タグ に navbar を クラス に 指定 し ます。 この とき 背景 色 を セット する ため の navbar-inverse と ナビゲーション を 画面 上 に 固定 する ため の navbar-fixed-top を指定-->
+  <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+      <!---内部 に ヘッダ を 配置 する レイアウト を 指定 する navbar-header を セット し て、 その 中 に ロゴ や サイト 名 を 表示 し て、 それ を リンク に する navbar-brand を 指定 し ます。-->
+    <a class="navbar-brand" href="/">フィーダー</a>
+    <!---一方 で 折りたたん だ ナビゲーション に navbar-toggler という クラス を 指定 し ます が、 重要 なのは、 data-toggle に collapse data-target に# navbarText を 指定 する こと が 重要 です。-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!---data-toggle に collapse data-target に# navbarText を 指定 する ことで id に navbarText を 指定 し て いる タグ に対して、 ボタン を 押す たび に data-toggle で 指定 し た クラス を On-Off する こと が でき ます-->
+    <!---<モバイル 端末 で 折りたたみ たい 要素 には collapse navbar-collapse を 指定 し ます。-->
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">ホーム<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">フィーダーについて</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/question">質問</a>
+        </li>        
+      </ul>
+      <span class="navbar-text">
+        <!---CSS の クラス に btn を 指定 し て、 その後 に btn-で 始める クラス を 指定 する こと-->
+        <a href="/login" class="btn btn-primary">ログイン</a>
+      </span>
+    </div>
+  </nav>
+  <div class="jumbotron">
+    <div class="container">
+      <h1>hello world</h1>
+      <p>HOGE FUGA FOO</p>
+      <img src ="http://2.bp.blogspot.com/-Vo_Zg1TcAz8/V5NDnu2l8WI/AAAAAAAA8dQ/bVr8Ybi7k9oSX8MH0Af9Kvv5MzW-ccwJQCLcB/s800/ai_pet_family.png" class ="img-thumbnail" width ="200" height ="200" alt ="sample image"/>
+    </div>
+  </div>
+  </body>
+  <script 
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+    crossorigin="anonymous"></script>
+  <script 
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js "integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+    crossorigin="anonymous"></script>
+  <script 
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js "integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+    crossorigin="anonymous"></script>
+
+</html>
